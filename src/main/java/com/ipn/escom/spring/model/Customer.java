@@ -1,10 +1,8 @@
 package com.ipn.escom.spring.model;
 
 import java.io.Serializable;
-//import org.springframework.data.mongodb.core.mapping.Document;
-import java.util.Date;
 
-//@Document
+
 public class Customer implements Serializable {
 
     private Long id;
@@ -13,7 +11,7 @@ public class Customer implements Serializable {
     public Customer() {
     }
 
-    public Customer(Long id, String firstName, String lastName, String email, String mobile, Date dateOfBirth) {
+    public Customer(Long id, String firstName) {
         this.id = id;
         this.firstName = firstName;
     }
