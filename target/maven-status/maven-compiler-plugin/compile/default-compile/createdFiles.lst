@@ -3,5 +3,6 @@ com\ipn\escom\spring\controller\CustomerRestController.class
 com\ipn\escom\spring\model\Customer.class
 com\ipn\escom\spring\configuration\AppInitializer.class
 com\ipn\escom\spring\configuration\MongoConfiguration.class
+com\ion\escom\spring\logicLayer\ApplicationLayer.class
 com\ipn\escom\spring\repository\MongoApplicationRepository.class
 com\ipn\escom\spring\dao\CustomerDAO.class
