@@ -2,6 +2,7 @@ package com.ipn.escom.spring.controller;
 
 import com.ion.escom.spring.logicLayer.ApplicationLayer;
 import com.ipn.escom.spring.model.Customer;
+import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,15 +23,17 @@ public class CustomerRestController {
     @Autowired
     private ApplicationLayer applicationLayer;
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Customer> getCustomers(@PathVariable("id") String entryId) {
+  /*  @RequestMapping(value = "/{id}")
+    public ResponseEntity<Optional<Customer>> getCustomers(@PathVariable("id") String entryId) {
 
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
+        
+        //return new ResponseEntity<>(applicationLayer.readOne(entryId), HttpStatus.OK);
+    }*/
 
     @RequestMapping(value = "/r", method = RequestMethod.POST)
     public ResponseEntity create(@RequestBody Customer c, UriComponentsBuilder uriBuilder) {
 
+        logger.info("creating customer ");
         return new ResponseEntity(HttpStatus.ACCEPTED);
     }
 

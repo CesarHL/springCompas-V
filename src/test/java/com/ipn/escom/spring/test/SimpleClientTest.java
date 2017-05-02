@@ -12,14 +12,12 @@ public class SimpleClientTest {
 
     private static final Logger logger = LoggerFactory.getLogger(SimpleClientTest.class);
 
-    /*public Customer readOneTegraLog(String id) {
+    public void readOneTegraLog(String id) {
         if (id == null) {
             logger.debug("Element " + id + " was not found");
-
         }
-        logger.debug("reading one code " + id + " from " + directoryItem.getURI());
-        return restClient.getForObject(directoryItem.getURI() + id, TegraLog.class);
-    }*/
+        logger.debug("reading one code " + id);
+    }
 
     public SimpleClientTest() {
     }

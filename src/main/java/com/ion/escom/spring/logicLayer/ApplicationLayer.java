@@ -5,8 +5,8 @@ import com.ipn.escom.spring.repository.MongoApplicationRepository;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
 public class ApplicationLayer {
@@ -16,7 +16,7 @@ public class ApplicationLayer {
     @Autowired
     private MongoApplicationRepository mongoApplicationRepository;
 
-    public Optional<Customer> readOne(String entryId) {
+  /*  public Optional<Customer> readOne(String entryId) {
 
         logger.debug("Searching log " + entryId);
 
@@ -29,6 +29,10 @@ public class ApplicationLayer {
             logger.debug("Not found element by id " + entryId);
         }
         return entry;
+    }*/
+
+    public void create(Customer customer) {
+        mongoApplicationRepository.insert(customer);
     }
 
 }
