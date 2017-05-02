@@ -1,7 +1,7 @@
 com\ipn\escom\spring\configuration\AppConfig.class
 com\ipn\escom\spring\controller\CustomerRestController.class
-com\ipn\escom\spring\Repository.class
 com\ipn\escom\spring\model\Customer.class
 com\ipn\escom\spring\configuration\AppInitializer.class
 com\ipn\escom\spring\configuration\MongoConfiguration.class
+com\ipn\escom\spring\repository\MongoApplicationRepository.class
 com\ipn\escom\spring\dao\CustomerDAO.class
